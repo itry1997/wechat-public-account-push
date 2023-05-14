@@ -21,11 +21,44 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '臭臭',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oJ7Zj6qhyxBJ62nOyactv77VrCyI',
+      id: 'oJ7Zj6r9_P9aStYekC7_Bt3lUXJk',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: 'NvSpQm_Hd3AfKHajDS_UtI1emk2MpQk_f-urem4_X7A',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       horoscopeDate: '03-12',
+      festivals: [
+        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        {
+          type: '*生日', name: '臭臭', year: '1997', date: '02-04',
+        },
+        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+        {
+          type: '生日', name: '臭臭', year: '1997', date: '03-12',
+        },
+        {
+          type: '生日', name: '少爷', year: '1997', date: '11-26',
+        },
+        {
+          type: '节日', name: '相识纪念日', year: '2022', date: '08-15',
+        },
+      ],
+      // 我们在一起已经有xxxx天了的配置
+      customizedDateList: [
+        // 在一起的日子
+        { keyword: 'love_day', date: '2022-08-15' },
+        // 结婚纪念日
+        { keyword: 'marry_day', date: '2022-08-15' },
+      ],
+    },
+    {
+      // 想要发送的人的名字
+      name: '少爷',
+      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+      id: 'oJ7Zj6qhyxBJ62nOyactv77VrCyI',
+      // 使用微信测试号：你想对他发送的模板消息的模板ID
+      useTemplateId: 'NvSpQm_Hd3AfKHajDS_UtI1emk2MpQk_f-urem4_X7A',
+      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+      horoscopeDate: '11-26',
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
